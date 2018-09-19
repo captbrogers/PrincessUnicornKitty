@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1537221705 source:/home/brian/code/cpp/SFML_Starter/src/main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"Animation.h"
+
+1537297677 source:/home/brian/code/cpp/SFML_Starter/src/Animation.cpp
+	"Animation.h"
+	<iostream>
+
+1537221316 /home/brian/code/cpp/SFML_Starter/src/Animation.h
+	<SFML/Graphics.hpp>
+
