@@ -14,11 +14,13 @@
 				<Compiler>
 					<Add option="-pg" />
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-pg" />
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
+					<Add library="sfml-network" />
 					<Add library="sfml-system" />
 				</Linker>
 			</Target>
@@ -29,12 +31,30 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="sfml-graphics" />
-					<Add library="sfml-window" />
-					<Add library="sfml-system" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-audio.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-audio-d.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-audio-s.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-audio-s-d.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-graphics.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-graphics-d.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-graphics-s.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-graphics-s-d.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-network.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-network-d.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-network-s.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-network-s-d.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-system.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-system-d.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-system-s.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-system-s-d.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-window.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-window-d.so" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-window-s.a" />
+					<Add library="/home/brian/code/libs/SFML-2.5.0/lib/libsfml-window-s-d.a" />
 				</Linker>
 			</Target>
 		</Build>
@@ -49,6 +69,7 @@
 		<Unit filename="resources/LPC_Sara/attribution.txt" />
 		<Unit filename="resources/LPC_Sara/characters/SaraFullSheet.png" />
 		<Unit filename="resources/LPC_Sara/characters/Walking.png" />
+		<Unit filename="resources/LPC_Sara/characters/WalkingAll.png" />
 		<Unit filename="resources/LPC_Sara/credit.txt" />
 		<Unit filename="resources/LPC_Tile_Atlas/Atlas1_Attribution.txt" />
 		<Unit filename="resources/LPC_Tile_Atlas/Atlas2_Attribution.txt" />
@@ -60,6 +81,8 @@
 		<Unit filename="resources/tux.png" />
 		<Unit filename="src/Animation.cpp" />
 		<Unit filename="src/Animation.h" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Player.h" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<code_completion />
