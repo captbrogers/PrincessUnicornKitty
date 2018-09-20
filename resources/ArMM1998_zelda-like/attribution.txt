@@ -1,3 +1,0 @@
-Author: ArMM1998
-Assets: Zelda-like tilesets and sprites
-License: CC0
